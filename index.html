@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="bulb">
+        <img id="Image" onclick="turnOnOff()" src=
+        "https://media.geeksforgeeks.org/wp-content/uploads/OFFbulb.jpg">
+    </div>
+
+    <div>
+        <button type="button"  id="on">on</button>
+        <button type="button" id="off">off</button>
+
+    </div>
+    <script>
+        let bulbContainer =document.getElementById("bulb")
+        let on = document.querySelector("#on")
+        let off = document.getElementById("off")
+        on.addEventListener("click",(e)=>{
+            bulbContainer.innerHTML = '<img src="https://media.geeksforgeeks.org/wp-content/uploads/ONbulb.jpg" alt="" srcset="">';
+
+        },)
+        off.addEventListener("click",(e)=>{
+        bulbContainer.innerHTML = '<img src="https://media.geeksforgeeks.org/wp-content/uploads/OFFbulb.jpg" alt="" srcset="">';
+
+        },)
+
+    </script>
+</body>
+</html>
